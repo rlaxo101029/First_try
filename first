@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | 모바일 최적화</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap');
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter">PORTFOLIO.</h1>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="#projects" class="hover:text-blue-600">Work</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
+        <span class="text-blue-600 font-bold mb-4 block">Available for Work</span>
+        <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            안녕하세요, <br/>
+            가치를 기록하는 <span class="text-gray-400">OOO입니다.</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-xl">
+            모바일에서도 편하게 확인할 수 있는 미니멀 포트폴리오입니다. 
+            아래에서 제 주요 프로젝트를 확인해보세요.
+        </p>
+    </header>
+
+    <main id="projects" class="px-6 py-10 max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8">Selected Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="group cursor-pointer">
+                <div class="aspect-video bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-lg transition-all text-center flex items-center justify-center text-gray-400">
+                    Project Image (16:9)
+                </div>
+                <h4 class="text-xl font-bold">프로젝트 제목 01</h4>
+                <p class="text-gray-500 mb-2">UI/UX Design • 2024</p>
+                <p class="text-sm text-gray-600">이 프로젝트에 대한 간단한 설명을 적어주세요. 모바일에서도 읽기 편하도록 2~3줄이 적당합니다.</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-video bg-gray-300 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-lg transition-all text-center flex items-center justify-center text-gray-400">
+                    Project Image (16:9)
+                </div>
+                <h4 class="text-xl font-bold">프로젝트 제목 02</h4>
+                <p class="text-gray-500 mb-2">Web Development • 2024</p>
+                <p class="text-sm text-gray-600">반응형 웹사이트 구축 사례입니다. 모바일 환경에서의 사용자 경험을 최우선으로 고려했습니다.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contact" class="bg-white border-t border-gray-200 mt-20 px-6 py-16 text-center">
+        <h3 class="text-2xl font-bold mb-4">Let's Talk!</h3>
+        <p class="text-gray-600 mb-8 text-lg">새로운 도전을 함께할 파트너를 찾고 계신가요?</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+            <a href="mailto:your@email.com" class="w-full md:w-auto px-8 py-4 bg-black text-white rounded-full font-bold hover:bg-gray-800 transition-colors">
+                이메일 보내기
+            </a>
+            <a href="https://github.com" class="w-full md:w-auto px-8 py-4 border border-gray-300 rounded-full font-bold hover:bg-gray-50 transition-colors">
+                GitHub 보러가기
+            </a>
+        </div>
+        <p class="mt-12 text-gray-400 text-sm">© 2025 Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
